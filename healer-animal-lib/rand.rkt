@@ -1,10 +1,10 @@
 #lang racket
 
-(provide rand-fish)
+(provide rand)
 
 (require animal-assets)
 
-(define (rand-fish)
+(define (rand)
   (first 
     (shuffle 
       (list 

@@ -1,6 +1,6 @@
 #lang racket
 
-(provide app
+(provide (all-from-out "./icons.rkt")
          make-avatar
          make-enemy
          make-food
@@ -9,7 +9,11 @@
          make-healing-avatar
          make-hurt-animal
          survival-game
-         custom-bg)
+         custom-bg
+         listify
+         )
+
+(require "./icons.rkt")
 
 
 ;Move these out
@@ -23,7 +27,16 @@
 (require survival
          ratchet/util
          (for-syntax racket)
-         (prefix-in a: animal-assets))
+         (prefix-in a: animal-assets)
+         syntax/parse/define)
+
+
+(define-syntax (listify stx)
+  (syntax-parse stx
+    [(_ (things ...)) 
+     #'(list things ...)]
+    [(_ thing)
+      #'(list thing)]))
 
 (define (fast-sprite-equal? s1 s2)
     (fast-equal? (current-fast-frame s1) (current-fast-frame s2)))

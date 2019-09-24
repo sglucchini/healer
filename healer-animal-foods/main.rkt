@@ -2,33 +2,34 @@
 
 (require ratchet)
 
-(define-ratchet-lang healer-animal-foods/main
+(define-ratchet-lang 
   (provide 
-    (all-from-out healer-fish-lib/start)
-    (all-from-out healer-lib)
     (all-from-out racket) 
+    (all-from-out healer-animal-lib)
     (all-from-out animal-assets))
 
-  (require racket animal-assets 
-           healer-lib
-           healer-lib/icons
-           (only-in healer-fish-lib/start start)
-           (rename-in healer-fish-lib/rand [rand-fish rand])
-           (only-in survival draw-sprite))
+  (require racket 
+           animal-assets 
+           healer-animal-lib)
 
   #:wrapper launch-game-engine
 
-  [start     = play-icon]
+    [start    = play-icon]
+    
+    ;Animals
+    [cat      c (draw-sprite cat)]
+    [dog      d (draw-sprite dog)]
+    [horse    h (draw-sprite horse)]
+    [rabbit   r (draw-sprite rabbit)]
 
-  [fish          f (draw-sprite fish)]
-  [green-fish    g (draw-sprite green-fish)]
+    ;Foods
+    [apple      a (draw-sprite apple)]
+    [kiwi       k (draw-sprite kiwi)]
+    [onion      o (draw-sprite onion)]
+    [potato     p (draw-sprite potato)]
+    [tomato     t (draw-sprite tomato)]
 
-  [jellyfish     j (draw-sprite jellyfish)]
-  [yellow-fish   y (draw-sprite yellow-fish)]
-  [starfish      s (draw-sprite starfish)]
-  [crab          c (draw-sprite crab)]
+    ;Other
+    [rand     ? question-icon]  
 
-  
-  [rand     ? question-icon])
-
-
+  )
