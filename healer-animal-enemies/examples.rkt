@@ -3,7 +3,7 @@
 (require healer-lib/examples-lib)
 
 (make-enemy-examples 
-  #:lang healer-animal-foods
+  #:lang healer-animal-enemies
   #:start start
   #:avatars (goat rabbit sheep turkey)
   #:foods   (broccoli mushroom onion kiwi)
