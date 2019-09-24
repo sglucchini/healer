@@ -5,11 +5,6 @@
 (require animal-assets)
 
 (define (rand)
-  (first 
-    (shuffle 
-      (list 
-        ;Add whatever makes sense in this lang...
-        green-fish
-        yellow-fish
-        jellyfish))))
+  (first (shuffle (list cat dog goat horse rabbit sheep turkey
+                                     apple broccoli kiwi mushroom onion potato))))
 
