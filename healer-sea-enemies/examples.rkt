@@ -6,7 +6,7 @@
   #:lang healer-sea-enemies
   #:start start
   #:avatars (shark ghost-fish red-fish orange-fish)
-  #:foods   (apple banana fish grapes)
+  #:foods   (potato cherries mushroom strawberry)
   #:friends (jellyfish octopus crab shark)
   #:colors  (yellow orange red green)
   #:enemies (shark ghost-fish red-fish orange-fish)

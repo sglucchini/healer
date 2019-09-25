@@ -33,5 +33,12 @@
   [silver   y (draw-sprite silver)]
   [gold     z (draw-sprite gold)]
 
-  [rand     ? question-icon])
+  [rand     ? question-icon]
+  
+  [red            R (square 32 'solid 'red)]
+  [orange         O (square 32 'solid 'orange)]
+  [yellow         Y (square 32 'solid 'yellow)]
+  [green          G (square 32 'solid 'green)]
+  [blue           B (square 32 'solid 'blue)]
+  [purple         P (square 32 'solid 'purple)])
 

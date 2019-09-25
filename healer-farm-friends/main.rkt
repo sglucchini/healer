@@ -14,6 +14,8 @@
 
   #:wrapper launch-game-engine
 
+  [start    = play-icon]
+
   [llama    l (draw-sprite llama)]
   [cow      c (draw-sprite cow)]
   [rabbit   r (draw-sprite rabbit)]
@@ -30,4 +32,10 @@
 
   [rand     ? question-icon]
 
+  [red            R (square 32 'solid 'red)]
+  [orange         O (square 32 'solid 'orange)]
+  [yellow         Y (square 32 'solid 'yellow)]
+  [green          G (square 32 'solid 'green)]
+  [blue           B (square 32 'solid 'blue)]
+  [purple         P (square 32 'solid 'purple)] 
   )

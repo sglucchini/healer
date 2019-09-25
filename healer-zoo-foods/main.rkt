@@ -30,13 +30,4 @@
     [potato   p (draw-sprite potato)]
     [tomato   t (draw-sprite tomato)]
 
-    [rand     ? question-icon]
-    
-    [red            R (square 32 'solid 'red)]
-    [orange         O (square 32 'solid 'orange)]
-    [yellow         Y (square 32 'solid 'yellow)]
-    [green          G (square 32 'solid 'green)]
-    [blue           B (square 32 'solid 'blue)]
-    [purple         P (square 32 'solid 'purple)]
-
-  )
+    [rand     ? question-icon])
