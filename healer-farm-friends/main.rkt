@@ -10,7 +10,8 @@
 
   (require racket 
            animal-assets 
-           healer-farm-lib)
+           healer-farm-lib
+           (only-in 2htdp/image square))
 
   #:wrapper launch-game-engine
 

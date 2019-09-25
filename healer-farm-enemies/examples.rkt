@@ -5,9 +5,9 @@
 (define-enemies-examples 
   #:lang healer-farm-enemies
   #:start start
-  #:avatars (goat rabbit sheep turkey)
-  #:foods   (broccoli mushroom onion kiwi)
-  #:friends (cat horse dog goat)
+  #:avatars (llama horse cow rabbit)
+  #:foods   (apple grapes kiwi pepper)
+  #:friends (sheep dog wolf llama)
   #:colors  (yellow orange red green)
-  #:enemies (goat rabbit horse cat)
+  #:enemies (sheep dog wolf llama)
   #:rand rand)
