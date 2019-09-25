@@ -6,7 +6,7 @@
   #:lang healer-zoo-enemies
   #:start start
   #:avatars (monkey elephant hippo kangaroo)
-  #:foods   (apple banana fish grapes)
+  #:foods   (apple banana fish tomato)
   #:friends (penguin zookeeper monkey elephant)
   #:colors  (yellow orange red green)
   #:enemies (monkey elephant hippo kangaroo)

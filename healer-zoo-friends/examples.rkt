@@ -3,7 +3,7 @@
 (require healer-lib/examples-lib)
 
 (define-friends-examples
-  #:lang healer-zoo-foods
+  #:lang healer-zoo-friends
   #:start start
   #:avatars (zookeeper elephant hippo kangaroo)
   #:foods   (apple banana fish tomato)
