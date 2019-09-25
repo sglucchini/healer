@@ -1,6 +1,6 @@
 #lang racket
 
-(provide make-food-examples make-friend-examples make-enemy-examples)
+(provide define-food-examples define-friends-examples define-enemies-examples)
 (provide add-ratchet-output-to-response)
 
 (require (only-in ts-kata-util define-example-code))
@@ -31,7 +31,7 @@
                    (convert-syntax-string vis-lang
                                           code-string))))]))
 
-(define-syntax-rule (make-food-examples 
+(define-syntax-rule (define-food-examples 
                       #:lang lang
                       #:start START
                       #:avatars (AVATAR-A AVATAR-B AVATAR-C AVATAR-D) 
@@ -74,7 +74,7 @@
       healer-005
       (START RAND (RAND RAND RAND)))))
 
-(define-syntax-rule (make-friend-examples 
+(define-syntax-rule (define-friends-examples 
                       #:lang lang
                       #:start START
                       #:avatars (AVATAR-A AVATAR-B AVATAR-C AVATAR-D) 
@@ -158,7 +158,7 @@
              ((FRIEND-A 2) (RAND COLOR-A))))))
 
 
-(define-syntax-rule (make-enemy-examples 
+(define-syntax-rule (define-enemies-examples 
                       #:lang lang
                       #:start START
                       #:avatars (AVATAR-A AVATAR-B AVATAR-C AVATAR-D) 

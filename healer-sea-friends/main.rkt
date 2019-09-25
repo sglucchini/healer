@@ -18,17 +18,19 @@
 
   [start       x play-icon]
 
-  [yellow-fish y (draw-sprite yellow-fish)]
-  [green-fish  g (draw-sprite green-fish)]
+  [shark       s (draw-sprite shark)]
+  [ghost-fish  g (draw-sprite ghost-fish)]
   [red-fish    r (draw-sprite red-fish)]
+  [orange-fish f (draw-sprite orange-fish)]
+  [jellyfish   j (draw-sprite jellyfish)]
+  [octopus     o (draw-sprite octopus)]
   [crab        c (draw-sprite crab)]
-  [starfish    s (draw-sprite starfish)]
 
-  [pineapple p (draw-sprite pineapple)]
-  [broccoli  b (draw-sprite broccoli)]
-  [kiwi      k (draw-sprite kiwi)]
-  [tomato    t (draw-sprite tomato)]
-  [apple     a (draw-sprite apple)]
+  [apple       a (draw-sprite apple)]
+  [broccoli    b (draw-sprite broccoli)]
+  [kiwi        k (draw-sprite kiwi)]
+  [mushroom    m (draw-sprite mushroom)]
+  [pineapple   p (draw-sprite pineapple)]
 
   [red    R (square 32 'solid 'red)]
   [orange O (square 32 'solid 'orange)]
@@ -38,5 +40,4 @@
   [purple P (square 32 'solid 'purple)]
 
   [rand     ? question-icon]
-
   )

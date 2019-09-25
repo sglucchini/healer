@@ -15,20 +15,24 @@
 
   #:wrapper launch-game-engine
 
-
   [start       x play-icon]
 
-  [yellow-fish y (draw-sprite yellow-fish)]
-  [green-fish  g (draw-sprite green-fish)]
+  [shark       s (draw-sprite shark)]
+  [ghost-fish  g (draw-sprite ghost-fish)]
   [red-fish    r (draw-sprite red-fish)]
+  [orange-fish f (draw-sprite orange-fish)]
+  [jellyfish   j (draw-sprite jellyfish)]
+  [octopus     o (draw-sprite octopus)]
   [crab        c (draw-sprite crab)]
-  [starfish    s (draw-sprite starfish)]
 
-  [pineapple p (draw-sprite pineapple)]
-  [broccoli  b (draw-sprite broccoli)]
-  [kiwi      k (draw-sprite kiwi)]
-  [tomato    t (draw-sprite tomato)]
-  [apple     a (draw-sprite apple)]
+  [potato      p (draw-sprite potato)]
+  [strawberry  y (draw-sprite strawberry)]
+  [apple       a (draw-sprite apple)]
+  [cherries    i (draw-sprite cherries)]
+  [banana      b (draw-sprite banana)]
+  [kiwi        k (draw-sprite kiwi)]
+  [tomato      t (draw-sprite tomato)]
+  [mushroom    m (draw-sprite mushroom)]
 
   [red    R (square 32 'solid 'red)]
   [orange O (square 32 'solid 'orange)]
@@ -37,6 +41,7 @@
   [blue   B (square 32 'solid 'blue)]
   [purple P (square 32 'solid 'purple)]
 
-  [rand     ? question-icon]
+
+  [rand        ? question-icon]
 
   )

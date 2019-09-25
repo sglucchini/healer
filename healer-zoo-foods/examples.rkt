@@ -2,7 +2,7 @@
 
 (require healer-lib/examples-lib)
 
-(make-food-examples 
+(define-food-examples
   #:lang healer-zoo-foods
   #:start start
   #:avatars (monkey elephant hippo kangaroo)

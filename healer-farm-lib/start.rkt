@@ -1,6 +1,5 @@
 #lang racket
 
-;Umm,what??
 (provide start)
 
 (require healer-lib/start
@@ -9,23 +8,22 @@
 (define (start-f
           (avatar-sprite (list question-icon)) 
           (food-sprites '()) 
-          (npc-sprites '()) 
+          (coin-sprites '()) 
           (enemy-sprites '()))
 
-  (displayln "Animal game starting!")
+  (displayln "Farm game starting!")
 
   (generic-start-f 
     #:bg               (custom-bg #:rows 2 #:columns 2)
     #:avatar-sprite    avatar-sprite
     #:food-sprites     food-sprites
-    #:npc-sprites      npc-sprites
+    #:coin-sprites     coin-sprites
     #:enemy-sprites    enemy-sprites
-    #:score-prefix     "Animals Healed"
+    #:score-prefix     "Score"
     #:instructions 
     (make-instructions "ARROW KEYS to move"
-                       "SPACE to eat food and talk"
+                       "SPACE to eat food and collect coins"
                        "ENTER to close dialogs"
-                       "H to heal animals"
                        "I to open these instructions"
                        "M to open and close the map")))
 

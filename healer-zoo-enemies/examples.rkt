@@ -2,8 +2,8 @@
 
 (require healer-lib/examples-lib)
 
-(make-enemy-examples 
-  #:lang healer-zoo-enemy
+(define-enemies-examples
+  #:lang healer-zoo-enemies
   #:start start
   #:avatars (monkey elephant hippo kangaroo)
   #:foods   (apple banana fish grapes)

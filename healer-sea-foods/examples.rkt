@@ -2,9 +2,9 @@
 
 (require healer-lib/examples-lib)
 
-(make-food-examples 
-  #:lang healer-animal-foods
+(define-food-examples
+  #:lang healer-sea-foods
   #:start start
-  #:avatars (cat dog horse rabbit)
-  #:foods   (apple kiwi potato rabbit)
+  #:avatars (yellow-fish green-fish red-fish crab)
+  #:foods   (pineapple broccoli kiwi tomato)
   #:rand rand)
