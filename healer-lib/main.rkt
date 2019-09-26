@@ -1,18 +1,16 @@
 #lang racket
 
-(provide (all-from-out "./icons.rkt"))
-(require "./icons.rkt"
-         (for-syntax racket))
+(provide 
+  (all-from-out color-strings)
+  (rename-out [play play-icon]))
 
-(define-syntax (provide-string stx)
-  (define id (second (syntax->datum stx)))
-  (datum->syntax stx
-                 `(begin
-                    (provide ,id)
-                    (define ,id ,(~a id)))))
+(require 
+  (only-in common-icons play)
+  (only-in color-strings
+           red
+           green
+           blue
+           yellow
+           orange
+           purple))
 
-(define-syntax-rule (provide-strings s ...)
-  (begin (provide-string s) ...))
-
-(provide-strings red orange yellow green blue purple
-                 pink lightgreen lightblue cyan magenta salmon)

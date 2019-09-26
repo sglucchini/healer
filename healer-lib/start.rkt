@@ -2,7 +2,7 @@
 
 (provide
   bind-start-to
-  generic-start-f
+  generic-start
   custom-bg
   start
   make-instructions)
@@ -12,7 +12,7 @@
          (for-syntax racket)
          (prefix-in a: animal-assets)
          syntax/parse/define
-         (only-in "./icons.rkt" question-mark-icon))
+         (only-in common-icons question-mark))
 
 (define-syntax (listify stx)
   (syntax-parse stx
@@ -38,16 +38,15 @@
                   ...)]))
 
 
-(define (generic-start-f
+(define (generic-start
           #:bg (bg (custom-bg #:rows 2 #:columns 2))
           #:avatar-sprite (avatar-sprite 
-                            (list question-mark-icon))
+                            (list question-mark))
           #:starvation-rate (starvation-rate 25)
           #:food-sprites (food-sprites '()) 
-          #:coin-sprites (coin-sprites '()) 
           #:enemy-sprites (enemy-sprites '()) 
           #:npc-sprites (npc-sprites '()) 
-          #:score-prefix (score-prefix "Score")
+          #:score-prefix (score-prefix "Friends Healed")
           #:instructions (instructions
                            (make-instructions "ARROW KEYS to move"
                                               "SPACE to eat food and collect coins"
@@ -60,8 +59,6 @@
 
   (define food-list
     (map (curry apply make-food) food-sprites))
-  (define coin-list
-    (map (curry apply make-coin) coin-sprites))
   (define enemy-list
     (map (curry apply make-enemy) enemy-sprites))
   (define npc-list
@@ -72,9 +69,8 @@
                  #:starvation-rate starvation-rate
                  #:avatar        avatar
                  #:food-list     food-list
-                 #:coin-list     coin-list
                  #:enemy-list    enemy-list
-                 #:score-prefix "Score"
+                 #:score-prefix score-prefix 
                  #:instructions instructions)
   )
 

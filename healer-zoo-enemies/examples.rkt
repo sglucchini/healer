@@ -1,6 +1,6 @@
 #lang racket
 
-(require healer-lib/examples-lib)
+(require healer-lib/examples-lib "./main.rkt")
 
 (define-enemies-examples
   #:lang healer-zoo-enemies
